@@ -56,6 +56,7 @@ public class CalculatorApp extends Application {
 		Tab graphingTab = new Tab("Graphing", graphingPane);
 		
 		
+		
 		// --- Memory Tab Setup ---
 		ListView<String> memoryView = new ListView<>	(CalculatorMemoryManager.getMemoryList());
 		Label emptyMemoryPlaceHolder = new Label("No memory values stored yet (M+, M-)");
@@ -262,6 +263,7 @@ public class CalculatorApp extends Application {
 		}
 		
 		tabPane.getTabs().addAll(standardTab, scientificTab, historyTab, memoryTab, graphingTab);
+		
 		tabPane.getSelectionModel().selectedItemProperty().addListener((observable, oldTab, newTab) ->{
 			if (newTab != null && newTab.getContent() != null) {
 				FadeTransition fade = new FadeTransition(Duration.millis(1000), newTab.getContent());
@@ -378,7 +380,7 @@ public class CalculatorApp extends Application {
 			else {
 				root.getStyleClass().remove("dark-theme");
 			}
-			// Sync graphing canvas color with current theme mode
+			// Sync graphing canvas and business tab color with current theme mode
 			InteractiveGraphingCalculator.setDarkTheme(isDark);
 		});
 				

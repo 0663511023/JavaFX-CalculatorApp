@@ -1,0 +1,283 @@
+
+/* --- Root & Base Theme Variables --- */
+.root {
+	-fx-background-color: #f8fafc;
+	-fx-font-family: "Segoe UI", -apple-system, sans-serif;
+	-fx-font-size: 15px;
+}
+
+/* --- Light Theme Effects --- */
+.light-theme {
+	-fx-base: #f1f5f9;
+	-fx-background-color: #e2e8f0;
+	-fx-control-inner-background: #f8fafc;
+}
+
+.light-theme .tool-container {
+	-fx-background-color: #f8fafc;
+	-fx-border-color: #cbd5e1;
+	-fx-border-width: 1px;
+	-fx-border-radius: 10px;
+	-fx-background-radius: 10px;
+	-fx-effect: dropshadow(three-pass-box, rgba(148, 163, 184 ,0.08), 15, 0, 0, 4);
+}
+
+.light-theme .tool-header {
+	-fx-font-size: 17px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #0f172a;
+}
+
+.light-theme .styled-label {
+	-fx-text-fill: #334155;
+	-fx-font-weight: 600;
+}
+
+.light-theme .output-label {
+	-fx-text-fill: #475569;
+}
+
+.light-theme .output-highlight {
+	-fx-text-fill: #10b981;
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+
+/* --- Dark Theme Effects --- */
+.dark-theme {
+	-fx-base: #1e293b;
+	-fx-background-color: #0f172a;
+	-fx-control-inner-background: #1e293b;
+}
+
+/* --- Container Panels --- */
+.dark-theme .tool-container {
+	-fx-background-color: #1e293b;
+	-fx-border-color: #334155;
+	-fx-border-width: 1px;
+	-fx-border-radius: 10px;
+	-fx-background-radius: 10px;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 18, 0, 0, 8);
+}
+
+.dark-theme .tool-header {
+	-fx-font-size: 17px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #f8fafc;
+}
+
+.dark-theme .styled-label {
+	-fx-text-fill: #cbd5e1;
+	-fx-font-weight: 600;
+}
+
+.dark-theme .output-label {
+	-fx-text-fill: #94a3b8;
+}
+
+.dark-theme .output-highlight {
+	-fx-text-fill: #34d399;
+	-fx-font-weight: bold;
+	-fx-font-size: 15px;
+}
+
+/* --- Theme Toggle Button Matrix --- */
+.light-theme .theme-btn-light {
+	-fx-background-color: #10b981;
+	-fx-text-fill: #ffffff;
+	-fx-font-weight: bold;
+	-fx-background-radius: 6px;
+	-fx-padding: 7px 16px;
+	-fx-cursor: hand;
+}
+
+.light-theme .theme-btn-dark {
+	-fx-background-color: #cbd5e1;
+	-fx-text-fill: #334155;
+	-fx-font-weight: bold;
+	-fx-background-radius: 6px;
+	-fx-padding: 7px 16px;
+	-fx-cursor: hand;
+}
+
+.dark-theme .theme-btn-light {
+	-fx-background-color: #334155;
+	-fx-text-fill: #94a3b8;
+	-fx-font-weight: bold;
+	-fx-background-radius: 6px;
+	-fx-padding: 7px 16px;
+	-fx-cursor: hand;
+}
+
+.dark-theme .theme-btn-dark {
+	-fx-background-color: #fbbf24;
+	-fx-text-fill: #0f172a;
+	-fx-font-weight: bold;
+	-fx-background-radius: 6px;
+	-fx-padding: 7px 16px;
+	-fx-cursor: hand;
+}
+
+/* --- TabPane and Tabs Styling --- */
+.tab-pane {
+	-fx-padding: 8px;
+}
+
+.tab-pane .tab-header-background {
+	-fx-background-color: derive(-fx-base, -10%);
+}
+
+.tab {
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+	-fx-background-radius: 6px 6px 0 0;
+	-fx-background-insets: 0 2 0 2;
+	-fx-padding: 8px 18px;
+	-fx-cursor: hand;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}
+
+.light-theme .tab {
+	-fx-background-color: #cbd5e1;
+	-fx-text-fill: #475569;
+	-fx-border-color: #334155;
+	-fx-border-width: 1px;
+}
+
+.light-theme .tab:selected {
+	-fx-background-color: #f8fafc;
+	-fx-text-fill: #10b981;
+}
+
+.dark-theme .tab {
+	-fx-background-color: #1e293b;
+	-fx-text-fill: #94a3b8;
+	-fx-border-color: #334155;
+}
+
+.dark-theme .tab:selected {
+	-fx-background-color: #0f172a;
+	-fx-text-fill: #34d399;
+}
+
+.tab .tab-label {
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+}
+
+/* --- Buttons Styling --- */
+.button-primary {
+	-fx-background-color: #10b981;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+	-fx-padding: 10px 20px;
+	-fx-background-radius: 6px;
+	-fx-cursor: hand;
+}
+
+.button-primary:hover {
+	-fx-background-color: #059669;
+}
+
+.button-danger {
+	-fx-background-color: #ef4444;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-font-size: 13px;
+	-fx-padding: 8px 20px;
+	-fx-background-radius: 6px;
+	-fx-cursor: hand;
+}
+
+.button-danger:hover {
+	-fx-background-color: #dc2626;
+}
+
+/* --- TextFields & ComboBoxes Styling --- */
+.text-field, .combo-box {
+	-fx-font-size: 14px;
+	-fx-background-radius: 6px;
+	-fx-border-radius: 6px;
+	-fx-padding: 8px;
+	-fx-border-color: #cbd5e1;
+	-fx-border-width: 1px;
+	-fx-background-color: -fx-control-inner-background;
+	-fx-background-insets: 0;
+}
+
+.light-theme .text-field:hover, .light-theme .combo-box:hover {
+	-fx-border-color: #cbd5e1;
+	-fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.15), 6, 0, 0, 0);
+}
+
+.dark-theme .text-field:hover, .dark-theme .combo-box:hover {
+	-fx-border-color: #475569;
+	-fx-effect: dropshadow(three-pass-box, rgba(52, 211, 153, 0.2), 8, 0, 0, 0);
+}
+
+.text-field:focused, .combo-box:focused {
+	-fx-border-color: #10b981;
+	-fx-background-color: -fx-control-inner-background;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	/*-fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.3), 8, 0, 0, 0) !important;*/
+}
+
+.dark-theme .text-field, .dark-theme .combo-box {
+	-fx-text-fill: #ffffff;
+	-fx-prompt-text-fill: #757575;
+	-fx-border-color: #475569;
+}
+
+.combo-box-popup .list-view .list-cell {
+	-fx-font-family: "Segoe UI", -apple-system, sans-serif !important;
+	-fx-font-size: 14px !important;
+	-fx-font-weight: normal !important;
+	-fx-padding: 6px 10px !important;
+}
+
+/* --- ListView / History Styling --- */
+.list-view {
+	-fx-background-radius: 8px;
+	-fx-border-radius: 8px;
+	-fx-border-width: 1px;
+	-fx-background-color: -fx-control-inner-background;
+	-fx-padding: 5px;
+}
+
+.light-theme .list-view {
+	-fx-border-color: #cbd5e1;
+}
+
+.dark-theme .list-view {
+	-fx-border-color: #334155;
+}
+
+.list-view .list-cell {
+	-fx-font-family: "Consolas", "Courier New", monospace;
+	-fx-font-size: 17px;
+	-fx-font-weight: 600;
+	-fx-padding: 10px 14px;
+	-fx-background-color: transparent;
+	-fx-transition: background-color 0.2s ease, text-fill 0.15s ease;
+	
+}
+
+.light-theme .list-view .list-cell { -fx-text-fill: #334155; }
+.light-theme .list-view .list-cell:selected {
+	-fx-background-color: #e2e8f0;
+	-fx-text-fill: #10b981;
+}
+
+.dark-theme .list-view .list-cell {-fx-text-fill: #cbd5e1;}
+.dark-theme .list-view .list-cell:selected {
+	-fx-background-color: #1e293b;
+	-fx-text-fill: #34d399;
+}
+
+.list-view .list-cell:empty {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+}
