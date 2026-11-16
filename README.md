@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JavaFX Modern Calculator App
 
 A feature-rich, modern desktop calculator application built using Java and JavaFX, featuring custom styling, a responsive UI layout, and a robust expression parsing.
@@ -44,3 +45,7 @@ src/
 - Native desktop executable packaging via jpackage.
 
 *Built with passion as part of desktop application development exploration*
+=======
+# JavaFX-CalculatorApp
+JavaFX Calculator App created in JavaFX
+>>>>>>> branch 'main' of https://github.com/0663511023/JavaFX-CalculatorApp.git
